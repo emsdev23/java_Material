@@ -1,20 +1,38 @@
-public class DelcarationANDReinitialization {
-    //in class level we can only declare statements
-    //int num;
+// public class DelcarationANDReinitialization {
+//     //in class level we can only declare statements
+//     //int num;
     
-    int num=200;//declaration with values
+//     int num=200;//declaration with values
     
-    // assignment statements can`t appear at class level they can only appear at methods and constructors
-    //num=20;
-    void compute(){
-        num=3000; //re-initialization
-        int increment=num+1;
-        System.out.println(increment);
-    }
+//     // assignment statements can`t appear at class level they can only appear at methods and constructors
+//     //num=20;
+//     void compute(){
+//         num=3000; //re-initialization
+//         int increment=num+1;
+//         System.out.println(increment);
+//     }
 
-    public static void main(String[] args){ 
-        DelcarationANDReinitialization callobj=new DelcarationANDReinitialization();
-        callobj.compute();
-    }
+//     public static void main(String[] args){ 
+//         DelcarationANDReinitialization callobj=new DelcarationANDReinitialization();
+//         callobj.compute();
+//     }
     
-}   
+// }   
+
+
+
+class Student {
+    String name;
+
+    void display() {
+        System.out.println(name);
+    }
+}
+
+public class DelcarationANDReinitialization {
+    public static void main(String[] args) {
+        Student s1 = new Student(); // object
+        s1.name = "Ganesh";
+        s1.display();
+    }
+}
